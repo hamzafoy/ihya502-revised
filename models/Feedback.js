@@ -16,4 +16,13 @@ const visitorInputSchema = new Schema({
         type: String,
         required: true
     }
-})
+});
+
+
+
+/*::::::::::::::::::::::::::::::::::::::::
+::::::::::  Exporting Models  ::::::::::::
+::::::::::::::::::::::::::::::::::::::::*/
+
+const Feedback = mongoose.model('Feedback', visitorInputSchema);
+module.exports = Feedback;
