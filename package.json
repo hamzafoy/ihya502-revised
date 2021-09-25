@@ -1,0 +1,27 @@
+{
+  "name": "ihya502_revised",
+  "version": "1.0.0",
+  "description": "An app for the Ihya502 podcast intended to showcase the latest episode, feature information about the production, and receive input from viewers.\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamzafoy/ihya502-revised.git"
+  },
+  "keywords": [
+    "podcast",
+    "islam",
+    "intellect",
+    "learning",
+    "education",
+    "community"
+  ],
+  "author": "Hamza Foy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamzafoy/ihya502-revised/issues"
+  },
+  "homepage": "https://github.com/hamzafoy/ihya502-revised#readme"
+}
