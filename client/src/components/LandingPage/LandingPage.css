@@ -1,0 +1,23 @@
+/*
+++ Font properties for imported Google Fonts
+
+font-family: 'Poiret One', cursive;
+font-family: 'Wire One', sans-serif;
+font-family: 'Zilla Slab', serif;
+*/
+
+.landing-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.landing-page__heading {
+    font-family: 'Poiret One', cursive;
+}
+
+.landing-page__text {
+    font-family: 'Zilla Slab', serif;
+}

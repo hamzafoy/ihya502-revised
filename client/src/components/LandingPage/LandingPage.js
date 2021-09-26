@@ -19,7 +19,7 @@ class LandingPage extends React.Component {
             <div className="landing-page-container">
 
                 <h1 className="landing-page__heading">
-                    Test your heading fonts here.
+                    TEST HEADING HERE.
                 </h1>
 
                 <p className="landing-page__text">
