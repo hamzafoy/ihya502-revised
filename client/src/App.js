@@ -17,10 +17,12 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
+
           <Route path="/" exact component={
-            <LandingPage/>
+            () => <LandingPage/>
           }
           />
+
         </Switch>
       </Router>
     </div>
