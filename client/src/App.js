@@ -1,8 +1,9 @@
 /*::::::::::::::::::::::::::::::::::::::::
-:::::::::::::  Importing CSS :::::::::::::
+::  Importing CSS, Dependencies, Routes ::
 ::::::::::::::::::::::::::::::::::::::::*/
 
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 
@@ -13,13 +14,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        -------------
-        Front-End is Work in Progress
-        -------------
-
-      </header>
+      <Router>
+        <Switch>
+          
+        </Switch>
+      </Router>
     </div>
   );
 }
