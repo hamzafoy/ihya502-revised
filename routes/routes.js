@@ -13,8 +13,9 @@ const Feedback = require('../models/Feedback');
 ::::::::::::::::::::::::::::::::::::::::*/
 
 router.get('/', (req, res) => {
-    console.log(`Spaceship docked at the root!`)
-})
+    res.send(`Spaceship docked at the root!`);
+    console.log(`Spaceship docked at the root!`);
+});
 
 
 
