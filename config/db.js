@@ -9,7 +9,7 @@ const dbKey = process.env.MONGODB_URI || config.get('mongoURI');
 
 
 /*::::::::::::::::::::::::::::::::::::::::
-:::::  Connection to Mongo Database ::::::
+:::::  Connection to Mongo Database  :::::
 ::::::::::::::::::::::::::::::::::::::::*/
 
 const connectingDB = async () => {
@@ -33,7 +33,7 @@ const connectingDB = async () => {
 
 
 /*::::::::::::::::::::::::::::::::::::::::
-::: Exporting Database Connection Func :::
+::::  Exporting Database Connection  :::::
 ::::::::::::::::::::::::::::::::::::::::*/
 
 module.exports = connectingDB;

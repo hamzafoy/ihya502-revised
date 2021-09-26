@@ -10,13 +10,13 @@ const path = require('path');
 
 
 /*::::::::::::::::::::::::::::::::::::::::
-::: Running Express, connecting to the :::
-::: database & routes, & picking ports :::
+::  Running Express, connecting to the  ::
+::  database & routes, & picking ports  ::
 ::::::::::::::::::::::::::::::::::::::::*/
 
 const application = express();
 const connectingDB = require('./config/db');
-const routes = require('./routes/visitorInput');
+const routes = require('./routes/routes');
 const port = process.env.PORT || 8080;
 
 
