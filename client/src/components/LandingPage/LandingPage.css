@@ -15,7 +15,7 @@ font-family: 'Zilla Slab', serif;
 .landing-page-container {
     display: flex;
     flex-direction: column;
-    min-height: 95vh;
+    min-height: 100vh;
     background-color: #D0D38F;
 }
 
@@ -65,8 +65,9 @@ svg:hover .svg__play-circle {
 
 
 svg:hover .svg__play-button {
+    fill: #bdbbe4;
     stroke-width: 0.5;
-    transition: stroke-width 0.5s ease;
+    transition: stroke-width 0.5s ease, fill 0.5 ease;
 }
 
 .landing-page__podcast-label {
