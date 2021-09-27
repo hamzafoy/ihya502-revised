@@ -19,12 +19,28 @@ class LandingPage extends React.Component {
             <div className="landing-page-container">
 
                 <h1 className="landing-page__heading">
-                    TEST HEADING HERE.
+                    IHYA502
                 </h1>
 
-                <p className="landing-page__text">
-                    Test your regular text fonts here.
-                </p>
+                <h1 className="landing-page__heading">
+                    PODCAST FOR LOUISVILLE MUSLIMS
+                </h1>
+
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="0.25"
+                viewBox="0 0 24 24"
+                className="svg__play"
+                >
+                    <circle class="svg__play-circle" cx="12" cy="12" r="8"></circle>
+                    <path class="svg__play-button" d="M10 8L16 12 10 16 10 8z"></path>
+                </svg>
 
             </div>
         )
