@@ -15,7 +15,7 @@ font-family: 'Zilla Slab', serif;
 .landing-page-container {
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 95vh;
     background-color: #D0D38F;
 }
 
@@ -31,9 +31,9 @@ font-family: 'Zilla Slab', serif;
 .landing-page__animated-button {
     display: flex;
     flex-direction: column;
+    flex-grow: 2;
     align-items: center;
     justify-content: center;
-    flex-grow: 2;
 }
 
 
@@ -44,20 +44,52 @@ font-family: 'Zilla Slab', serif;
 
 
 .svg__play-circle {
-    transition: transform 1s ease, fill 1s ease, stroke-width 1s ease;
-    transform-origin: center;
     fill: #D0D38F;
+    stroke-width: 0.25;
+    transition: transform 0.5s ease, fill 0.5s ease, stroke-width 0.5s ease;
+    transform-origin: center;
+}
+
+
+.svg__play-button {
+    stroke-width: 0.25;
+    transition: stroke-width 0.5s ease;
 }
 
 
 svg:hover .svg__play-circle {
-    transform: scale(0.9825);
-    transform-origin: center;
     fill: #928fd3;
+    transform: scale(0.9875);
+    transform-origin: center;
 }
 
 
 svg:hover .svg__play-button {
-    stroke-width: 0.75;
-    transition: stroke-width 1s ease;
+    stroke-width: 0.5;
+    transition: stroke-width 0.5s ease;
+}
+
+.landing-page__podcast-label {
+    margin: 0 0 2.25vh 4vw;
+}
+
+
+.landing-page__podcast-label p,
+.landing-page__podcast-label ul {
+    list-style-type: none;
+    font-family: 'Zilla Slab', serif;
+    text-align: left;
+}
+
+
+.landing-page__podcast-label p {
+    margin: 0 0 0.5vh 0;
+    font-size: 1.35em;
+    font-weight: 600;
+}
+
+
+.landing-page__podcast-label ul {
+    padding-left: 5px;
+    font-size: 1.15em;
 }

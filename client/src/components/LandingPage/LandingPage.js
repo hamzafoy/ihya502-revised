@@ -28,19 +28,42 @@ class LandingPage extends React.Component {
 
                 <section className="landing-page__animated-button">
 
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="0.25"
-                viewBox="0 0 24 24"
-                className="svg__play"
-                >
-                    <circle class="svg__play-circle" cx="50%" cy="50%" r="11.5"></circle>
-                    <path class="svg__play-button" d="M10 8L16 12 10 16 10 8z"></path>
-                </svg>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="0.25"
+                    viewBox="0 0 24 24"
+                    className="svg__play"
+                    >
+
+                        <circle class="svg__play-circle" cx="50%" cy="50%" r="11.5"></circle>
+                        <path class="svg__play-button" d="M10 8L16 12 10 16 10 8z"></path>
+
+                    </svg>
+
+                </section>
+
+                <section className="landing-page__podcast-label">
+
+                    <p>
+                        Latest Podcast
+                    </p>
+
+                    <ul className="landing-page__podcast-label">
+
+                        <li>
+                            <strong>Date:</strong> 08-13-2021
+                        </li>
+
+                        <li>
+                            <strong>Topic:</strong> 'Reading between the Lines'<br/>
+                            Review of 'What Tech Calls Thinking'
+                        </li>
+
+                    </ul>
 
                 </section>
 
