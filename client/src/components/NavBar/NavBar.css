@@ -43,6 +43,7 @@
         font-weight: 600;
     }
 
+
     .nav-bar__organizational-icons::after {
         content: "Navigation";
         position: absolute;
@@ -51,17 +52,36 @@
         font-weight: 600;
     }
     
+
     .svg-instagram,
     .svg-substack,
     .svg-facebook {
-        transition: transform 0.75s ease;
+        transition: transform 1.25s ease, fill 0.75s ease;
     }
+
 
     .svg-instagram:hover,
     .svg-substack:hover,
     .svg-facebook:hover {
-        transform: scale(1.25);
+        transform: rotate(360deg) scale(1.25);
         transform-origin: center;
+    }
+
+
+    .svg-instagram:hover {
+        color: #c32aa3;
+        fill: white;
+    }
+
+
+    .svg-substack:hover {
+        color: #FF7731;
+    }
+
+
+    .svg-facebook:hover {
+        color: #1877f2;
+        fill: white;
     }
 
 }
