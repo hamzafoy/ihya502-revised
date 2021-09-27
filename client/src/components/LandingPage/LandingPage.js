@@ -1,5 +1,5 @@
 /*::::::::::::::::::::::::::::::::::::::::
-::::::  Importing CSS, Dependencies ::::::
+::::::  Importing CSS, Dependencies  :::::
 ::::::::::::::::::::::::::::::::::::::::*/
 
 import './LandingPage.css';
