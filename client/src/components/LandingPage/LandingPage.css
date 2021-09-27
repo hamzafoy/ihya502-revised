@@ -9,7 +9,7 @@ font-family: 'Zilla Slab', serif;
 
 
 /*::::::::::::::::::::::::::::::::::::::::
-:::::::::::  Mobile Layout CSS :::::::::::
+::::::::::  Mobile Layout CSS  :::::::::::
 ::::::::::::::::::::::::::::::::::::::::*/
 
 .landing-page-container {
@@ -70,6 +70,7 @@ svg:hover .svg__play-button {
     transition: stroke-width 0.5s ease, fill 0.5 ease;
 }
 
+
 .landing-page__podcast-label {
     margin: 0 0 2.25vh 4vw;
 }
@@ -93,4 +94,54 @@ svg:hover .svg__play-button {
 .landing-page__podcast-label ul {
     padding-left: 5px;
     font-size: 1.15em;
+}
+
+
+
+/*::::::::::::::::::::::::::::::::::::::::
+::::::  Desktop/Laptop Layout CSS  :::::::
+::::::::::::::::::::::::::::::::::::::::*/
+
+@media (min-width: 1280px) {
+
+
+.landing-page__heading {
+    align-self: flex-end;
+    margin: 3.5vh 4vw 0 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 3.25em;
+}
+
+
+.landing-page__heading::after {
+    content: " • PODCAST FOR LOUISVILLE MUSLIMS"
+}
+
+
+.landing-page__heading:last-of-type {
+    display: none;
+}
+
+
+.svg__play {
+    height: 375px;
+    width: 375px;
+}
+
+
+.landing-page__podcast-label p {
+    margin: 0 0 0.5vh 0;
+    font-size: 1.85em;
+    font-weight: 600;
+}
+
+
+.landing-page__podcast-label ul li {
+    display: inline;
+    margin: 0 0.75vw;
+    padding-left: 5px;
+    font-size: 1.65em;
+}
+
+
 }
