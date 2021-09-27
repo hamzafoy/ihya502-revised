@@ -28,13 +28,40 @@
 }
 
 
-.nav-bar__svg::after {
-    content: "Instagram";
-    font-size: 1em;
-}
-
-
 
 /*::::::::::::::::::::::::::::::::::::::::
 ::::::  Desktop/Laptop Layout CSS  :::::::
 ::::::::::::::::::::::::::::::::::::::::*/
+
+@media (min-width: 1280px) {
+
+    .nav-bar__social-icons::after {
+        content: "Social Media";
+        position: absolute;
+        font-family: 'Poiret One', cursive;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .nav-bar__organizational-icons::after {
+        content: "Navigation";
+        position: absolute;
+        font-family: 'Poiret One', cursive;
+        font-size: 1em;
+        font-weight: 600;
+    }
+    
+    .svg-instagram,
+    .svg-substack,
+    .svg-facebook {
+        transition: transform 0.75s ease;
+    }
+
+    .svg-instagram:hover,
+    .svg-substack:hover,
+    .svg-facebook:hover {
+        transform: scale(1.25);
+        transform-origin: center;
+    }
+
+}

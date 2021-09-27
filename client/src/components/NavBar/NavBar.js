@@ -29,7 +29,7 @@ class NavBar extends React.Component {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="nav-bar__svg"
+                    className="nav-bar__svg svg-instagram"
                     viewBox="0 0 24 24"
                     >
                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
@@ -44,7 +44,7 @@ class NavBar extends React.Component {
                     role="img" 
                     width="1em" 
                     height="1em" 
-                    className="nav-bar__svg"
+                    className="nav-bar__svg svg-substack"
                     viewBox="0 0 24 24"
                     >
 
@@ -64,7 +64,7 @@ class NavBar extends React.Component {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="nav-bar__svg"
+                    className="nav-bar__svg svg-facebook"
                     viewBox="0 0 24 24"
                     >
 
