@@ -3,6 +3,7 @@
 ::::::::::::::::::::::::::::::::::::::::*/
 
 import './LandingPage.css';
+import NavBar from '../NavBar/NavBar';
 import React from 'react';
 
 
@@ -16,6 +17,9 @@ class LandingPage extends React.Component {
     render() {
 
         return(
+
+            <>
+
             <div className="landing-page-container">
 
                 <h1 className="landing-page__heading">
@@ -71,6 +75,10 @@ class LandingPage extends React.Component {
                 </section>
 
             </div>
+
+            <NavBar/>
+
+            </>
         )
 
     }

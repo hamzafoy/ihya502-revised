@@ -104,6 +104,10 @@ svg:hover .svg__play-button {
 
 @media (min-width: 1280px) {
 
+.landing-page-container {
+    min-height: 92.05vh;
+}
+
 
 .landing-page__heading {
     align-self: flex-end;
