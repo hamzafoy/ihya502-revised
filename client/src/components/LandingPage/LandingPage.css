@@ -19,6 +19,7 @@ font-family: 'Zilla Slab', serif;
     background-color: #D0D38F;
 }
 
+
 .landing-page__heading {
     align-self: flex-end;
     margin: 2.25vh 4vw 0 0;
@@ -26,6 +27,37 @@ font-family: 'Zilla Slab', serif;
     font-size: 1.4em;
 }
 
+
+.landing-page__animated-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+
 .svg__play {
-    align-self: center;
+    height: 275px;
+    width: 275px;
+}
+
+
+.svg__play-circle {
+    transition: transform 1s ease, fill 1s ease, stroke-width 1s ease;
+    transform-origin: center;
+    fill: #D0D38F;
+}
+
+
+svg:hover .svg__play-circle {
+    transform: scale(0.9825);
+    transform-origin: center;
+    fill: #928fd3;
+}
+
+
+svg:hover .svg__play-button {
+    stroke-width: 0.75;
+    transition: stroke-width 1s ease;
 }
