@@ -114,7 +114,7 @@ class NavBar extends React.Component {
                         <path className="svg-calendar-ring" d="M16 2L16 6"></path>
                         <path className="svg-calendar-ring" d="M8 2L8 6"></path>
                         <path className="svg-calendar-paper" d="M3 10L21 10"></path>
-                        <text x="9.5" y="17" class="svg-calendar-text-date">7</text>
+                        <text className="svg-calendar-text-date" x="9.5" y="17">7</text>
 
                     </svg>
 
@@ -150,9 +150,10 @@ class NavBar extends React.Component {
                     viewBox="0 0 24 24"
                     >
 
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 
-                        0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <path d="M22 6L12 13 2 6"></path>
+                        <path className="svg-envelope" d="M4 4h16c1.1 0 2 .9 2 2v12c0 
+                        1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <path className="svg-envelope-flap" d="M22 6L12 13 2 6"></path>
+                        <text className="svg-envelope-text" x="10" y="14.5">T</text>
 
                     </svg>
 

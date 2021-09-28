@@ -141,6 +141,80 @@
 }
 
 
+.nav-bar__svg .svg-outer-cir {
+    transition: transform 1.25s ease, stroke-width 1.25s ease;
+    transform-origin: center;
+}
+  
+  
+.nav-bar__svg .svg-middle-cir {
+    transition: transform 1.25s ease, stroke-width 1.25s ease;
+    transform-origin: center;
+}
+  
+  
+.nav-bar__svg .svg-inner-cir {
+    transition: transform 1.25s ease, stroke-width 1.25s ease;
+    transform-origin: center;
+}
+  
+  
+.nav-bar__svg:hover .svg-outer-cir {
+    fill: #c32aa3;
+    transform: scale(1.15);
+    transform-origin: center;
+    transition: transform 1.25s ease, stroke-width 1.25s ease;
+}
+  
+  
+.nav-bar__svg:hover .svg-middle-cir {
+    fill: #4c4c4c;
+    transform: translateY(-10%) translateX(10%);
+    transform-origin: center;
+    transition: transform 1.25s ease;
+}
+  
+  
+.nav-bar__svg:hover .svg-inner-cir {
+    fill: #F4F4F4;
+    stroke-width: .5;
+    transform: translateY(-10%) translateX(10%) scale(1.75);
+    transform-origin: center;
+    transition: transform 1.25s ease, stroke-width 1.25s ease;
+}
+
+
+.nav-bar__svg .svg-envelope-text {
+    font-family: 'Poiret One', cursive;
+    font-size: 10px;
+    font-weight: 100;
+    opacity: 0;
+}
+  
+  
+.nav-bar__svg:hover .svg-envelope {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+  
+  
+.nav-bar__svg:hover .svg-envelope-flap {
+    transform: scaleX(2) translateY(25%);
+    transform-origin: center;
+    transition: transform 1.25s ease;
+}
+  
+  
+.nav-bar__svg:hover .svg-envelope-text {
+    font-family: 'Poiret One', cursive;
+    font-size: 10px;
+    font-weight: 100;
+    opacity: 1;
+    transition: opacity 1.75s ease;
+}
+
+
+
 
 /*::::::::::::::::::::::::::::::::::::::::
 :::::::  Keyframe Animations CSS  ::::::::
@@ -184,7 +258,7 @@
 
 
     .nav-bar__social-icons:hover::before {
-        transform: rotate(0deg) scale(1.5);
+        transform: rotate(0deg) scale(1.35);
         transition: transform 1.25s ease;
     }
 
@@ -201,7 +275,7 @@
 
 
     .nav-bar__organizational-icons:hover::before {
-        transform: rotate(0deg) scale(1.5);
+        transform: rotate(0deg) scale(1.35);
         transition: transform 1.25s ease;
     }
     
@@ -283,82 +357,116 @@
 
 
     .svg-calendar-text-date {
+        font-family: 'Poiret One', cursive;
         font-size: 10px;
         font-weight: 100;
         opacity: 0;
         transition: opacity 1.5s ease;
-      }
+    }
       
-      .svg-calendar .svg-calendar-paper {
+    .svg-calendar .svg-calendar-paper {
         transition: transform 1.5s ease;
-      }
+    }
       
       
-      .svg-calendar .svg-calendar-ring {
+    .svg-calendar .svg-calendar-ring {
         opacity: 1;
         transition: transform 1.5s ease, opacity 1.5s ease;
-      }
+    }
       
       
-      .svg-calendar:hover .svg-calendar-paper {
+    .svg-calendar:hover .svg-calendar-paper {
         transform: translateY(-20%);
         transition: transform 1.5s ease;
-      }
+    }
       
       
-      .svg-calendar:hover .svg-calendar-ring {
-        transform: translateY(-10%);
+    .svg-calendar:hover .svg-calendar-ring {
         opacity: 0;
+        transform: translateY(-10%);
         transition: transform 1.5s ease, opacity 2s ease;
-      }
+    }
       
       
-      .svg-calendar:hover .svg-calendar-text-date {
+    .svg-calendar:hover .svg-calendar-text-date {
+        font-family: 'Poiret One', cursive;
+        font-size: 10px;
+        font-weight: 100;
         opacity: 1;
         transition: opacity 2s ease;
-      }
+    }
 
 
-      .nav-bar__svg .svg-outer-cir {
+    .nav-bar__svg .svg-outer-cir {
         transition: transform 1.25s ease, stroke-width 1.25s ease;
         transform-origin: center;
-      }
+    }
       
       
-      .nav-bar__svg .svg-middle-cir {
+    .nav-bar__svg .svg-middle-cir {
         transition: transform 1.25s ease, stroke-width 1.25s ease;
         transform-origin: center;
-      }
+    }
       
       
-      .nav-bar__svg .svg-inner-cir {
+    .nav-bar__svg .svg-inner-cir {
         transition: transform 1.25s ease, stroke-width 1.25s ease;
         transform-origin: center;
-      }
+    }
       
       
-      .nav-bar__svg:hover .svg-outer-cir {
+    .nav-bar__svg:hover .svg-outer-cir {
         fill: #c32aa3;
         transform: scale(1.15);
         transform-origin: center;
         transition: transform 1.25s ease, stroke-width 1.25s ease;
-      }
+    }
       
       
-      .nav-bar__svg:hover .svg-middle-cir {
+    .nav-bar__svg:hover .svg-middle-cir {
         fill: #4c4c4c;
         transform: translateY(-10%) translateX(10%);
         transform-origin: center;
         transition: transform 1.25s ease;
-      }
+    }
       
       
-      .nav-bar__svg:hover .svg-inner-cir {
+    .nav-bar__svg:hover .svg-inner-cir {
         fill: #F4F4F4;
         stroke-width: .5;
         transform: translateY(-10%) translateX(10%) scale(1.75);
         transform-origin: center;
         transition: transform 1.25s ease, stroke-width 1.25s ease;
-      }
+    }
+
+
+    .nav-bar__svg .svg-envelope-text {
+        font-family: 'Poiret One', cursive;
+        font-size: 10px;
+        font-weight: 100;
+        opacity: 0;
+    }
+      
+      
+    .nav-bar__svg:hover .svg-envelope {
+        transform: scale(1.1);
+        transform-origin: center;
+    }
+      
+      
+    .nav-bar__svg:hover .svg-envelope-flap {
+        transform: scaleX(2) translateY(25%);
+        transform-origin: center;
+        transition: transform 1.25s ease;
+    }
+      
+      
+    .nav-bar__svg:hover .svg-envelope-text {
+        font-family: 'Poiret One', cursive;
+        font-size: 10px;
+        font-weight: 100;
+        opacity: 1;
+        transition: opacity 1.75s ease;
+    }
 
 }
