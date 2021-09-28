@@ -62,6 +62,30 @@
 
 
 /*::::::::::::::::::::::::::::::::::::::::
+:::::::  Keyframe Animations CSS  ::::::::
+::::::::::::::::::::::::::::::::::::::::*/
+
+@keyframes about-us-line-race {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
+/*::::::::::::::::::::::::::::::::::::::::
 ::::::  Desktop/Laptop Layout CSS  :::::::
 ::::::::::::::::::::::::::::::::::::::::*/
 
@@ -131,5 +155,83 @@
         color: #1877f2;
         fill: #F4F4F4;
     }
+
+
+    .svg-about-us-first {
+        transition: transform 0.35s ease;
+    }
+
+
+    .svg-about-us-second {
+        transition: transform 1.5s ease;
+    }
+
+
+    .svg-about-us-third {
+        transition: transform 1s ease;
+    }
+
+
+    .svg-about-us-fourth {
+        transition: transform 0.85s ease;
+    }
+
+
+    .svg-about-us:hover .svg-about-us-first {
+        transform: translateX(-50%);
+        transition: transform 0.35s ease;
+    }
+
+    .svg-about-us:hover .svg-about-us-second {
+        transform: translateX(66%);
+        transition: transform 1.5s ease;
+    }
+
+    .svg-about-us:hover .svg-about-us-third {
+        transform: translateX(66%);
+        transition: transform 1s ease;
+    }
+
+    .svg-about-us:hover .svg-about-us-fourth {
+        transform: translateX(-50%);
+        transition: transform 0.85s ease;
+    }
+
+
+    .svg-calendar-text-date {
+        font-size: 10px;
+        font-weight: 100;
+        opacity: 0;
+        transition: opacity 1.5s ease;
+      }
+      
+      .svg-calendar .svg-calendar-paper {
+        transition: transform 1.5s ease;
+      }
+      
+      
+      .svg-calendar .svg-calendar-ring {
+        opacity: 1;
+        transition: transform 1.5s ease, opacity 1.5s ease;
+      }
+      
+      
+      .svg-calendar:hover .svg-calendar-paper {
+        transform: translateY(-20%);
+        transition: transform 1.5s ease;
+      }
+      
+      
+      .svg-calendar:hover .svg-calendar-ring {
+        transform: translateY(-10%);
+        opacity: 0;
+        transition: transform 1.5s ease, opacity 2s ease;
+      }
+      
+      
+      .svg-calendar:hover .svg-calendar-text-date {
+        opacity: 1;
+        transition: opacity 2s ease;
+      }
 
 }

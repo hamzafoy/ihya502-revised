@@ -86,14 +86,14 @@ class NavBar extends React.Component {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="nav-bar__svg"
+                    className="nav-bar__svg svg-about-us"
                     viewBox="0 0 24 24"
                     >
 
-                        <path d="M17 10L3 10"></path>
-                        <path d="M21 6L3 6"></path>
-                        <path d="M21 14L3 14"></path>
-                        <path d="M17 18L3 18"></path>
+                        <path className="svg-about-us-first" d="M17 10L3 10"></path>
+                        <path className="svg-about-us-second" d="M21 6L3 6"></path>
+                        <path className="svg-about-us-third" d="M21 14L3 14"></path>
+                        <path className="svg-about-us-fourth" d="M17 18L3 18"></path>
 
                     </svg>
 
@@ -106,14 +106,15 @@ class NavBar extends React.Component {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="nav-bar__svg"
+                    className="nav-bar__svg svg-calendar"
                     viewBox="0 0 24 24"
                     >
 
                         <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
-                        <path d="M16 2L16 6"></path>
-                        <path d="M8 2L8 6"></path>
-                        <path d="M3 10L21 10"></path>
+                        <path class="svg-calendar-ring" d="M16 2L16 6"></path>
+                        <path class="svg-calendar-ring" d="M8 2L8 6"></path>
+                        <path class="svg-calendar-paper" d="M3 10L21 10"></path>
+                        <text x="9.5" y="17" class="svg-calendar-text-date">7</text>
 
                     </svg>
 
