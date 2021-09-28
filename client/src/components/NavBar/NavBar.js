@@ -111,9 +111,9 @@ class NavBar extends React.Component {
                     >
 
                         <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
-                        <path class="svg-calendar-ring" d="M16 2L16 6"></path>
-                        <path class="svg-calendar-ring" d="M8 2L8 6"></path>
-                        <path class="svg-calendar-paper" d="M3 10L21 10"></path>
+                        <path className="svg-calendar-ring" d="M16 2L16 6"></path>
+                        <path className="svg-calendar-ring" d="M8 2L8 6"></path>
+                        <path className="svg-calendar-paper" d="M3 10L21 10"></path>
                         <text x="9.5" y="17" class="svg-calendar-text-date">7</text>
 
                     </svg>
@@ -126,14 +126,14 @@ class NavBar extends React.Component {
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokeWidth="1.25"
                     className="nav-bar__svg"
                     viewBox="0 0 24 24"
                     >
 
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <circle cx="12" cy="12" r="6"></circle>
-                        <circle cx="12" cy="12" r="2"></circle>
+                        <circle className="svg-outer-cir" cx="12" cy="12" r="10"></circle>
+                        <circle className="svg-middle-cir" cx="12" cy="12" r="6"></circle>
+                        <circle className="svg-inner-cir" cx="12" cy="12" r="2"></circle>
 
                     </svg>
 
