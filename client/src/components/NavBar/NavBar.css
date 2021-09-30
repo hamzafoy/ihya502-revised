@@ -200,12 +200,28 @@
     font-size: 10px;
     font-weight: 100;
     opacity: 0;
+    transition: opacity 1.25s ease;
+}
+
+
+.nav-bar__svg .svg-envelope {
+    transform: scale(1);
+    transform-origin: center;
+    transition: transform 1.75s ease;
+}
+
+
+.nav-bar__svg .svg-envelope-flap {
+    transform: scaleX(1);
+    transform-origin: center;
+    transition: transform 1.25s ease;
 }
   
   
 .nav-bar__svg:hover .svg-envelope {
     transform: scale(1.1);
     transform-origin: center;
+    transition: transform 1.25s ease;
 }
   
   
