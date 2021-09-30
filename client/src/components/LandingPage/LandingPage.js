@@ -9,10 +9,59 @@ import React from 'react';
 
 
 /*::::::::::::::::::::::::::::::::::::::::
+:::  Storing Play/Pause SVGs to render  ::
+::::::::::::::::::::::::::::::::::::::::*/
+
+const audioButton = {
+    play: (
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="0.25"
+        viewBox="0 0 24 24"
+        className="svg__play"
+        >
+
+            <circle class="svg__play-circle" cx="50%" cy="50%" r="11.5"></circle>
+            <path class="svg__play-button" d="M10 8L16 12 10 16 10 8z"></path>
+
+        </svg>
+    ),
+    pause: (
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="0.25"
+        viewBox="0 0 24 24"
+        className="svg__play"
+        >
+            <circle class="svg__play-circle" cx="50%" cy="50%" r="11.5"></circle>
+            <path class="svg__play-button" d="M10 15L10 9"></path>
+            <path class="svg__play-button" d="M14 15L14 9"></path>
+        </svg>
+    )
+}
+
+
+
+/*::::::::::::::::::::::::::::::::::::::::
 :::  Creating Landing Page Component  ::::
 ::::::::::::::::::::::::::::::::::::::::*/
 
 class LandingPage extends React.Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            isAudioPlaying: false
+        }
+    }
 
     render() {
 
@@ -32,21 +81,7 @@ class LandingPage extends React.Component {
 
                 <section className="landing-page__animated-button">
 
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="0.25"
-                    viewBox="0 0 24 24"
-                    className="svg__play"
-                    >
-
-                        <circle class="svg__play-circle" cx="50%" cy="50%" r="11.5"></circle>
-                        <path class="svg__play-button" d="M10 8L16 12 10 16 10 8z"></path>
-
-                    </svg>
+                    {this.state.isAudioPlaying ? audioButton.pause : audioButton.play}
 
                 </section>
 
