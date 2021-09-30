@@ -22,6 +22,17 @@
 }
 
 
+.nav-bar__social-icons a {
+    align-self: center;
+    color: black;
+}
+
+
+.nav-bar__social-icons a:visited {
+    color: black;
+}
+
+
 .nav-bar__svg {
     align-self: center;
     margin: 0 1.75vw;
