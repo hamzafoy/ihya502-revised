@@ -46,7 +46,32 @@
 @media (min-width: 1280px) {
 
 .about-us-container {
+    display: flex;
+    flex-direction: row;
     min-height: 92.05vh;
+}
+
+
+.about-us__content {
+    align-self: center;
+}
+
+
+.content__heading {
+    font-size: 3.25em;
+}
+
+
+.content__text {
+    font-size: 1.25em;
+    line-height: 1.75rem;
+}
+
+
+.about-us__art {
+    align-self: center;
+    height: 625px;
+    width: 625px;
 }
 
 
