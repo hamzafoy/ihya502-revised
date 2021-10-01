@@ -4,6 +4,7 @@
 
 import './NavBar.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -95,25 +96,27 @@ class NavBar extends React.Component {
 
                 <section className="nav-bar__organizational-icons">
 
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="nav-bar__svg svg-about-us"
-                    viewBox="0 0 24 24"
-                    >
+                    <Link to="/about" class="router-links">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="nav-bar__svg svg-about-us"
+                        viewBox="0 0 24 24"
+                        >
 
-                        <path className="svg-about-us-first" d="M17 10L3 10"></path>
-                        <path className="svg-about-us-second" d="M21 6L3 6"></path>
-                        <path className="svg-about-us-third" d="M21 14L3 14"></path>
-                        <path className="svg-about-us-fourth" d="M17 18L3 18"></path>
+                            <path className="svg-about-us-first" d="M17 10L3 10"></path>
+                            <path className="svg-about-us-second" d="M21 6L3 6"></path>
+                            <path className="svg-about-us-third" d="M21 14L3 14"></path>
+                            <path className="svg-about-us-fourth" d="M17 18L3 18"></path>
 
-                    </svg>
+                        </svg>
+                    </Link>
 
                     <svg
                     xmlns="http://www.w3.org/2000/svg"

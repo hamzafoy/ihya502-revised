@@ -22,7 +22,8 @@
 }
 
 
-.nav-bar__social-icons a {
+.nav-bar__social-icons a,
+.router-links {
     align-self: center;
     color: black;
 }

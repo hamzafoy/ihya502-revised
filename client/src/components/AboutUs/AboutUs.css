@@ -1,0 +1,25 @@
+/*::::::::::::::::::::::::::::::::::::::::
+::::::::::  Mobile Layout CSS  :::::::::::
+::::::::::::::::::::::::::::::::::::::::*/
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #D0D38F;
+}
+
+
+
+/*::::::::::::::::::::::::::::::::::::::::
+::::::  Desktop/Laptop Layout CSS  :::::::
+::::::::::::::::::::::::::::::::::::::::*/
+
+@media (min-width: 1280px) {
+
+.about-us-container {
+    min-height: 92.05vh;
+}
+
+
+}

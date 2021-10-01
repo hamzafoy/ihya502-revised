@@ -5,6 +5,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import LandingPage from './components/LandingPage/LandingPage';
+import AboutUs from './components/AboutUs/AboutUs';
 
 
 
@@ -23,6 +24,11 @@ function App() {
           }
           />
 
+          <Route path="/about" exact component={
+            () => <AboutUs/>
+          }
+          />
+          
         </Switch>
       </Router>
     </div>
