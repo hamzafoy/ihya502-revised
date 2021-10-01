@@ -5,8 +5,36 @@
 .about-us-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     min-height: 100vh;
     background-color: #D0D38F;
+}
+
+
+.about-us__content {
+    margin: 3.25vh 0 0;
+}
+
+
+.content__heading {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.75em;
+}
+
+
+.content__text {
+    margin: 3.25vh 7.25vw 0;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.15em;
+    line-height: 1.55rem;
+    text-align: justify;
+}
+
+
+.about-us__art {
+    align-self: center;
+    height: 265px;
+    width: 265px;
 }
 
 
