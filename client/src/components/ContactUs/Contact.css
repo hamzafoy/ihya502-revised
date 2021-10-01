@@ -2,7 +2,7 @@
 ::::::::::  Mobile Layout CSS  :::::::::::
 ::::::::::::::::::::::::::::::::::::::::*/
 
-.calendar-container {
+.contact-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -17,7 +17,7 @@
 
 @media (min-width: 1280px) {
 
-.calendar-container {
+.contact-container {
     min-height: 92.05vh;
 }
 

@@ -118,65 +118,71 @@ class NavBar extends React.Component {
                         </svg>
                     </Link>
 
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="nav-bar__svg svg-calendar"
-                    viewBox="0 0 24 24"
-                    >
+                    <Link to="/calendar" class="router-links">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="nav-bar__svg svg-calendar"
+                        viewBox="0 0 24 24"
+                        >
 
-                        <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
-                        <path className="svg-calendar-ring" d="M16 2L16 6"></path>
-                        <path className="svg-calendar-ring" d="M8 2L8 6"></path>
-                        <path className="svg-calendar-paper" d="M3 10L21 10"></path>
-                        <text className="svg-calendar-text-date" x="9.5" y="17">7</text>
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                            <path className="svg-calendar-ring" d="M16 2L16 6"></path>
+                            <path className="svg-calendar-ring" d="M8 2L8 6"></path>
+                            <path className="svg-calendar-paper" d="M3 10L21 10"></path>
+                            <text className="svg-calendar-text-date" x="9.5" y="17">7</text>
 
-                    </svg>
+                        </svg>
+                    </Link>
 
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="1.25"
-                    className="nav-bar__svg"
-                    viewBox="0 0 24 24"
-                    >
+                    <Link to="/stations" class="router-links">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.25"
+                        className="nav-bar__svg"
+                        viewBox="0 0 24 24"
+                        >
 
-                        <circle className="svg-outer-cir" cx="12" cy="12" r="10"></circle>
-                        <circle className="svg-middle-cir" cx="12" cy="12" r="6"></circle>
-                        <circle className="svg-inner-cir" cx="12" cy="12" r="2"></circle>
+                            <circle className="svg-outer-cir" cx="12" cy="12" r="10"></circle>
+                            <circle className="svg-middle-cir" cx="12" cy="12" r="6"></circle>
+                            <circle className="svg-inner-cir" cx="12" cy="12" r="2"></circle>
 
-                    </svg>
+                        </svg>
+                    </Link>
 
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="nav-bar__svg"
-                    viewBox="0 0 24 24"
-                    >
+                    <Link to="/contact-us" class="router-links">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="nav-bar__svg"
+                        viewBox="0 0 24 24"
+                        >
 
-                        <path className="svg-envelope" d="M4 4h16c1.1 0 2 .9 2 2v12c0 
-                        1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <path className="svg-envelope-flap" d="M22 6L12 13 2 6"></path>
-                        <text className="svg-envelope-text" x="10" y="14.5">T</text>
+                            <path className="svg-envelope" d="M4 4h16c1.1 0 2 .9 2 2v12c0 
+                            1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <path className="svg-envelope-flap" d="M22 6L12 13 2 6"></path>
+                            <text className="svg-envelope-text" x="10" y="14.5">T</text>
 
-                    </svg>
+                        </svg>
+                    </Link>
 
                 </section>
 

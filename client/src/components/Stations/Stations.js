@@ -2,7 +2,7 @@
 ::::::  Importing CSS, Dependencies  :::::
 ::::::::::::::::::::::::::::::::::::::::*/
 
-import './Calendar.css';
+import './Stations.css';
 import NavBar from '../NavBar/NavBar';
 import React from 'react';
 
@@ -12,7 +12,7 @@ import React from 'react';
 :::  Creating Landing Page Component  ::::
 ::::::::::::::::::::::::::::::::::::::::*/
 
-class Calendar extends React.Component {
+class Stations extends React.Component {
 
     render() {
 
@@ -20,7 +20,7 @@ class Calendar extends React.Component {
 
             <>
 
-                <div className="calendar-container">
+                <div className="stations-container">
 
                 </div>
 
@@ -40,4 +40,4 @@ class Calendar extends React.Component {
 :::  Exporting Landing Page Component  :::
 ::::::::::::::::::::::::::::::::::::::::*/
 
-export default Calendar;
+export default Stations;
