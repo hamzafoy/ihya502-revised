@@ -5,8 +5,16 @@
 .calendar-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     background-color: #D0D38F;
+}
+
+
+.calendar__img-vertical {
+    align-self: center;
+    height: 550px;
+    width: 95%;
 }
 
 
@@ -28,8 +36,7 @@
 .calendar__img {
     align-self: center;
     height: 610px;
-    width: 82.5%;
+    width: 75%;
 }
-
 
 }

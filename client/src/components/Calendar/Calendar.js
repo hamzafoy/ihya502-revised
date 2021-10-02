@@ -5,7 +5,8 @@
 import './Calendar.css';
 import NavBar from '../NavBar/NavBar';
 import React from 'react';
-import calendar from '../../assets/calendar_horizontal.png';
+import calendarHorizontal from '../../assets/calendar_horizontal.png';
+import calendarVertical from '../../assets/calendar_vertical.png';
 
 
 
@@ -17,17 +18,30 @@ class Calendar extends React.Component {
 
     render() {
 
+        const calendars = {
+            horizontal: (
+                <img
+                className="calendar__img"
+                alt="Calendar for the Ihya502 Podcast releases"
+                src={calendarHorizontal}
+                />
+            ),
+            vertical: (
+                <img
+                className="calendar__img-vertical"
+                alt="Calendar for the Ihya502 Podcast releases"
+                src={calendarVertical}
+                />
+            )
+        }
+
         return(
 
             <>
 
                 <div className="calendar-container">
 
-                    <img
-                    className="calendar__img"
-                    alt="Calendar for the Ihya502 Podcast releases"
-                    src={calendar}
-                    />
+                    {window.innerWidth > 1279 ? calendars.horizontal : calendars.vertical}
 
                 </div>
 
