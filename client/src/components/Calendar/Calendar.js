@@ -5,6 +5,7 @@
 import './Calendar.css';
 import NavBar from '../NavBar/NavBar';
 import React from 'react';
+import calendar from '../../assets/calendar_horizontal.png';
 
 
 
@@ -21,6 +22,12 @@ class Calendar extends React.Component {
             <>
 
                 <div className="calendar-container">
+
+                    <img
+                    className="calendar__img"
+                    alt="Calendar for the Ihya502 Podcast releases"
+                    src={calendar}
+                    />
 
                 </div>
 

@@ -18,7 +18,17 @@
 @media (min-width: 1280px) {
 
 .calendar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 92.05vh;
+}
+
+
+.calendar__img {
+    align-self: center;
+    height: 610px;
+    width: 82.5%;
 }
 
 
