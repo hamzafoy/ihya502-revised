@@ -32,6 +32,13 @@
 }
 
 
+.stations__text {
+    padding: 0 10vw;
+    font-family: 'Zilla Slab', serif;
+    font-size: 0.95em;
+}
+
+
 
 /*::::::::::::::::::::::::::::::::::::::::
 ::::::  Desktop/Laptop Layout CSS  :::::::

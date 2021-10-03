@@ -89,7 +89,8 @@ class Stations extends React.Component {
                     </section>
 
                     <p className="stations__text">
-                        Find us on Apple Podcasts, Spotify, &amp; YouTube!
+                        Find us on Apple Podcasts, Spotify, &amp; YouTube!<br/>
+                        Ihya502 can be added to additional platforms based on the audience's request.
                     </p>
 
                 </div>
