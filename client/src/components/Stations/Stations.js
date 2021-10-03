@@ -88,6 +88,10 @@ class Stations extends React.Component {
 
                     </section>
 
+                    <p className="stations__text">
+                        Find us on Apple Podcasts, Spotify, &amp; YouTube!
+                    </p>
+
                 </div>
 
                 <NavBar/>
