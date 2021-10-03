@@ -18,7 +18,29 @@
 @media (min-width: 1280px) {
 
 .stations-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     min-height: 92.05vh;
+}
+
+
+.stations__heading {
+    font-family: 'Poiret One', cursive;
+    font-size: 3.25em;
+}
+
+
+.stations__listings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.stations_icon {
+    height: 225px;
+    width: 225px;
 }
 
 
