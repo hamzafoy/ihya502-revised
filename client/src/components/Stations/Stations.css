@@ -29,6 +29,16 @@
     height: 125px;
     width: 125px;
     margin: 2vh 0;
+    fill: #928fd3;
+    transition: fill 1.25s ease, transform 1.25s ease;
+}
+
+
+.stations_icon:hover {
+    fill: #BDBBE4;
+    transform: scale(1.15);
+    transform-origin: center;
+    transition: fill 1.25s ease, transform 1.25s ease;
 }
 
 
@@ -71,6 +81,16 @@
 .stations_icon {
     height: 225px;
     width: 225px;
+    fill: #928fd3;
+    transition: fill 1.25s ease, transform 1.25s ease;
+}
+
+
+.stations_icon:hover {
+    fill: #BDBBE4;
+    transform: scale(1.15);
+    transform-origin: center;
+    transition: fill 1.25s ease, transform 1.25s ease;
 }
 
 
