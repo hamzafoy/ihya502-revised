@@ -5,6 +5,7 @@
 import './LandingPage.css';
 import NavBar from '../NavBar/NavBar';
 import React from 'react';
+import podcast from '../../assets/full_20210813.mp3';
 
 
 
@@ -17,15 +18,18 @@ class LandingPage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            isAudioPlaying: false
+            isAudioPlaying: true
         }
+        this.audio = new Audio(podcast)
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange = event => {
+        this.state.isAudioPlaying ? this.audio.play() : this.audio.pause();
         this.setState(prevState => ({
             isAudioPlaying: !prevState.isAudioPlaying
         }))
+        console.log(this.state.isAudioPlaying);
     }
 
     render() {
@@ -88,7 +92,7 @@ class LandingPage extends React.Component {
 
                 <section className="landing-page__animated-button">
 
-                    {this.state.isAudioPlaying ? audioButton.pause : audioButton.play}
+                    {this.state.isAudioPlaying ? audioButton.play : audioButton.pause}
 
                 </section>
 
