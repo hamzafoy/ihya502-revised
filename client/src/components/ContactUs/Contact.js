@@ -13,6 +13,14 @@ import React from 'react';
 ::::::::::::::::::::::::::::::::::::::::*/
 
 class Contact extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            commenter_name: '',
+            commenter_email: '',
+            comment: ''
+        }
+    }
 
     render() {
 
@@ -65,6 +73,11 @@ class Contact extends React.Component {
                             placeholder="Type your feedback here. . ."
                             name="comment"
                             className="contact-form__textarea"
+                            />
+
+                            <input
+                            type="submit"
+                            className="contact-form__submit"
                             />
 
                         </section>
