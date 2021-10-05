@@ -5,8 +5,54 @@
 .contact-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     min-height: 100vh;
     background-color: #D0D38F;
+}
+
+
+.contact__heading {
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5em;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.contact-form__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15vw;
+}
+
+
+.input__label {
+    margin: 3.75vh 0 0;
+    font-family: 'Zilla Slab', serif;
+    text-align: left;
+}
+
+
+.contact-form__input {
+    font-family: monospace;
+}
+
+
+.contact-form__textarea {
+    height: 140px;
+}
+
+
+.contact__text {
+    padding: 0 15vw;
+    font-family: 'Zilla Slab', serif;
+    font-size: 0.95em;
 }
 
 
