@@ -22,6 +22,27 @@ class Contact extends React.Component {
         }
     }
 
+    onChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    onSubmit = event => {
+        event.preventDefault();
+        const data = {
+            name: this.state.commenter_name,
+            email: this.state.commenter_email,
+            feedback: this.state.comment
+        }
+        console.log(data);
+        this.setState({
+            commenter_name: '',
+            commenter_email: '',
+            comment: ''
+        })
+    }
+
     render() {
 
         return(
@@ -34,7 +55,11 @@ class Contact extends React.Component {
                         Leave Feedback
                     </h1>
 
-                    <form noValidate className="contact-form">
+                    <form 
+                    noValidate 
+                    className="contact-form"
+                    onSubmit={this.onSubmit}
+                    >
 
                         <section className="contact-form__group">
                             
@@ -47,6 +72,8 @@ class Contact extends React.Component {
                             placeholder="Type your name here. . ."
                             name="commenter_name"
                             className="contact-form__input"
+                            value={this.state.commenter_name}
+                            onChange={this.onChange}
                             />
 
                             <h1 className="input__label">
@@ -58,6 +85,8 @@ class Contact extends React.Component {
                             placeholder="Type your email here. . ."
                             name="commenter_email"
                             className="contact-form__input"
+                            value={this.state.commenter_email}
+                            onChange={this.onChange}
                             />
 
                         </section>
@@ -73,6 +102,8 @@ class Contact extends React.Component {
                             placeholder="Type your feedback here. . ."
                             name="comment"
                             className="contact-form__textarea"
+                            value={this.state.comment}
+                            onChange={this.onChange}
                             />
 
                             <input
