@@ -52,8 +52,8 @@ class LandingPage extends React.Component {
                 onClick={this.handleChange}
                 >
         
-                    <circle class="svg__play-circle" cx="50%" cy="50%" r="11.5"></circle>
-                    <path class="svg__play-button" d="M10 8L16 12 10 16 10 8z"></path>
+                    <circle className="svg__play-circle" cx="50%" cy="50%" r="11.5"></circle>
+                    <path className="svg__play-button" d="M10 8L16 12 10 16 10 8z"></path>
         
                 </svg>
             ),
@@ -69,9 +69,9 @@ class LandingPage extends React.Component {
                 className="svg__play"
                 onClick={this.handleChange}
                 >
-                    <circle class="svg__play-circle" cx="50%" cy="50%" r="11.5"></circle>
-                    <path class="svg__play-button" d="M10 15L10 9"></path>
-                    <path class="svg__play-button" d="M14 15L14 9"></path>
+                    <circle className="svg__play-circle" cx="50%" cy="50%" r="11.5"></circle>
+                    <path className="svg__play-button" d="M10 15L10 9"></path>
+                    <path className="svg__play-button" d="M14 15L14 9"></path>
                 </svg>
             )
         }
