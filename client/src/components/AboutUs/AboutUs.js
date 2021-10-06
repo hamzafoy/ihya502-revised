@@ -5,7 +5,7 @@
 import './AboutUs.css';
 import NavBar from '../NavBar/NavBar';
 import React from 'react';
-import podcastArt from '../../assets/podcast.svg';
+import podcastArt from '../../assets/podcast.png';
 
 
 

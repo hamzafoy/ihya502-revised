@@ -72,6 +72,32 @@
 }
 
 
+.svg-home-bldg {
+    transform-origin: center;
+    transition: transform 1.75s ease;
+}
+
+
+.svg-home-door {
+    transform-origin: center;
+    transition: transform 1.75s ease;
+}
+
+
+.svg-home:hover .svg-home-bldg {
+    transform: scale(3);
+    transform-origin: center;
+    transition: transform 1.75s ease;
+}
+
+
+.svg-home:hover .svg-home-door {
+    transform: scale(1.5) translateY(-20%);
+    transform-origin: center;
+    transition: transform 1.75s ease;
+}
+
+
 .svg-about-us-first {
     transition: transform 0.35s ease;
 }
