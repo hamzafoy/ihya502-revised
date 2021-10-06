@@ -35,5 +35,3 @@ application.use(express.json({
 }));
 application.use('/api', routes);
 application.listen(port, () => console.log(`This funky DJ is spinnin' tracks on port ${port}`));
-
-//Triggering heroku to push again
