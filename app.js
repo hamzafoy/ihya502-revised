@@ -27,7 +27,7 @@ const port = process.env.PORT || 8080;
 
 connectingDB();
 application.use(cors({
-    origin: true,
+    origin: 'https://ihya502.vercel.app/contact-us',
     credentials: true
 }));
 application.use(express.json({
