@@ -42,7 +42,7 @@ class Contact extends React.Component {
             email: '',
             comment: ''
         })
-        axios.post('https://ihya502.herokuapp.com/api', data)
+        axios.post('https://ihya502.herokuapp.com/api', data, { withCredentials: true })
             .then(res => {
                 this.props.history.push('/')
             })
