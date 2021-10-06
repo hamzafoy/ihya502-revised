@@ -37,7 +37,7 @@ class Contact extends React.Component {
             comment: this.state.comment
         }
         console.log(data);
-        axios.post('http://localhost:8080/api', data)
+        axios.post('https://ihya502.herokuapp.com/api', data)
             .then(res => {
                 this.setState({
                     name: '',
