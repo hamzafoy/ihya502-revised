@@ -30,7 +30,7 @@ class Contact extends React.Component {
     }
 
     onSubmit = event => {
-        event.preventDefault();
+        /* event.preventDefault(); */
         const data = {
             name: this.state.name,
             email: this.state.email,
