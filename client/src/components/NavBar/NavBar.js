@@ -107,12 +107,12 @@ class NavBar extends React.Component {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="nav-bar__svg"
+                    className="nav-bar__svg svg-home"
                     viewBox="0 0 24 24"
                     >
 
-                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
-                    <path d="M9 22L9 12 15 12 15 22"></path>
+                    <path className="svg-home-bldg" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+                    <path className="svg-home-door" d="M9 22L9 12 15 12 15 22"></path>
                     
                     </svg>
 
