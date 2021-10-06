@@ -5,6 +5,7 @@
 import './Contact.css';
 import NavBar from '../NavBar/NavBar';
 import React from 'react';
+import axios from 'axios';
 
 
 
@@ -16,8 +17,8 @@ class Contact extends React.Component {
     constructor() {
         super();
         this.state = {
-            commenter_name: '',
-            commenter_email: '',
+            name: '',
+            email: '',
             comment: ''
         }
     }
@@ -31,16 +32,23 @@ class Contact extends React.Component {
     onSubmit = event => {
         event.preventDefault();
         const data = {
-            name: this.state.commenter_name,
-            email: this.state.commenter_email,
-            feedback: this.state.comment
+            name: this.state.name,
+            email: this.state.email,
+            comment: this.state.comment
         }
         console.log(data);
-        this.setState({
-            commenter_name: '',
-            commenter_email: '',
-            comment: ''
-        })
+        axios.post('http://localhost:8080/api', data)
+            .then(res => {
+                this.setState({
+                    name: '',
+                    email: '',
+                    comment: ''
+                })
+                this.props.history.push('/')
+            })
+            .catch(err => {
+                console.log(`Error in creating your feedback!`)
+            })
     }
 
     render() {
@@ -70,9 +78,9 @@ class Contact extends React.Component {
                             <input
                             type="text"
                             placeholder="Type your name here. . ."
-                            name="commenter_name"
+                            name="name"
                             className="contact-form__input"
-                            value={this.state.commenter_name}
+                            value={this.state.name}
                             onChange={this.onChange}
                             />
 
@@ -83,9 +91,9 @@ class Contact extends React.Component {
                             <input
                             type="text"
                             placeholder="Type your email here. . ."
-                            name="commenter_email"
+                            name="email"
                             className="contact-form__input"
-                            value={this.state.commenter_email}
+                            value={this.state.email}
                             onChange={this.onChange}
                             />
 

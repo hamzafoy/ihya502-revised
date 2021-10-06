@@ -12,9 +12,9 @@ const Feedback = require('../models/Feedback');
 :::::::::::  Backend Routes  :::::::::::::
 ::::::::::::::::::::::::::::::::::::::::*/
 
-router.get('/', (req, res) => {
-    res.send(`Spaceship docked at the root!`);
-    console.log(`Spaceship docked at the root!`);
+router.post('/', (req, res) => {
+    console.log(req.body);
+    Feedback.create(req.body);
 });
 
 
