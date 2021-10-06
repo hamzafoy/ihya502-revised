@@ -30,20 +30,20 @@ class Contact extends React.Component {
     }
 
     onSubmit = event => {
-        /* event.preventDefault(); */
+        event.preventDefault();
         const data = {
             name: this.state.name,
             email: this.state.email,
             comment: this.state.comment
         }
         console.log(data);
+        this.setState({
+            name: '',
+            email: '',
+            comment: ''
+        })
         axios.post('https://ihya502.herokuapp.com/api', data)
             .then(res => {
-                this.setState({
-                    name: '',
-                    email: '',
-                    comment: ''
-                })
                 this.props.history.push('/')
             })
             .catch(err => {
