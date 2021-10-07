@@ -43,7 +43,7 @@ class Calendar extends React.Component {
 
                 <div className="calendar-container">
 
-                    <LazyLoad height={'100%'} placeholder={<Loader/>} once>
+                    <LazyLoad height={400} placeholder={<Loader/>} once>
                         {window.innerWidth > 1279 ? calendars.horizontal : calendars.vertical}
                     </LazyLoad>
 
