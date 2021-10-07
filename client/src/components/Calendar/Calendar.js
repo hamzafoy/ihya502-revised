@@ -7,6 +7,7 @@ import NavBar from '../NavBar/NavBar';
 import React from 'react';
 import calendarHorizontal from '../../assets/calendar_horizontal.png';
 import calendarVertical from '../../assets/calendar_vertical.png';
+import LazyLoad from 'react-lazyload';
 
 
 
@@ -41,7 +42,9 @@ class Calendar extends React.Component {
 
                 <div className="calendar-container">
 
-                    {window.innerWidth > 1279 ? calendars.horizontal : calendars.vertical}
+                    <LazyLoad height={'100%'} once>
+                        {window.innerWidth > 1279 ? calendars.horizontal : calendars.vertical}
+                    </LazyLoad>
 
                 </div>
 
