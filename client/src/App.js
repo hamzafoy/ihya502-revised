@@ -1,5 +1,5 @@
 /*::::::::::::::::::::::::::::::::::::::::
-::  Importing CSS, Dependencies, Routes ::
+:  Importing CSS, Dependencies, Routes  ::
 ::::::::::::::::::::::::::::::::::::::::*/
 
 import './App.css';
