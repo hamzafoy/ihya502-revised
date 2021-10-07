@@ -25,6 +25,7 @@ class NavBar extends React.Component {
                     target="_blank" 
                     rel="noreferrer" 
                     href="https://www.instagram.com/ihya502/"
+                    title="Instagram"
                     >
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +50,7 @@ class NavBar extends React.Component {
                     target="_blank" 
                     rel="noreferrer" 
                     href="https://hamzafoy.substack.com/"
+                    title="Substack"
                     >
                         <svg
                         xmlns="http://www.w3.org/2000/svg" 
@@ -72,6 +74,7 @@ class NavBar extends React.Component {
                     target="_blank" 
                     rel="noreferrer" 
                     href="https://www.facebook.com/ihya502"
+                    title="Facebook"
                     >
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
