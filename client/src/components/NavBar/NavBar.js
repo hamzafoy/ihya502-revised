@@ -99,7 +99,7 @@ class NavBar extends React.Component {
 
                 <section className="nav-bar__organizational-icons">
 
-                    <Link to="/" className="router-links">
+                    <Link to="/" className="router-links" title="Home">
 
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,7 @@ class NavBar extends React.Component {
 
                     </Link>
 
-                    <Link to="/about" className="router-links">
+                    <Link to="/about" className="router-links" title="Learn More">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -143,7 +143,7 @@ class NavBar extends React.Component {
                         </svg>
                     </Link>
 
-                    <Link to="/calendar" className="router-links">
+                    <Link to="/calendar" className="router-links" title="Podcast Calendars">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -166,7 +166,7 @@ class NavBar extends React.Component {
                         </svg>
                     </Link>
 
-                    <Link to="/stations" className="router-links">
+                    <Link to="/stations" className="router-links" title="Podcast Stations">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -187,7 +187,7 @@ class NavBar extends React.Component {
                         </svg>
                     </Link>
 
-                    <Link to="/contact-us" className="router-links">
+                    <Link to="/contact-us" className="router-links" title="Drop your Feedback!">
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
