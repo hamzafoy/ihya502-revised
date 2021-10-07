@@ -27,7 +27,7 @@ class Loader extends React.Component {
                 stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="feather feather-loader"
+                className="svg-loader"
                 viewBox="0 0 24 24"
                 >
                 
