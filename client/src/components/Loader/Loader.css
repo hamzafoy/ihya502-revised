@@ -1,3 +1,8 @@
+.loader-container {
+    min-height: 92.05vh;
+}
+
+
 .svg-loader {
     height: 300px;
     width: 300px;
