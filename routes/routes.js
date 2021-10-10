@@ -14,8 +14,10 @@ const Feedback = require('../models/Feedback');
 
 router.post('/', (req, res) => {
     console.log(req.body);
-    Feedback.create(req.body);
-    res.end();
+    Feedback.create(req.body)
+        .then(feedback => res.json({
+            msg: `The feedback has been registered.`
+        }))
 });
 
 
