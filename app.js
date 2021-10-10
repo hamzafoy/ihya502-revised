@@ -15,6 +15,10 @@ const path = require('path');
 ::::::::::::::::::::::::::::::::::::::::*/
 
 const application = express();
+application.use(cors({
+    origin: true,
+    credentials: true
+}));
 const connectingDB = require('./config/db');
 const routes = require('./routes/routes');
 const port = process.env.PORT || 8080;
@@ -26,10 +30,7 @@ const port = process.env.PORT || 8080;
 ::::::::::::::::::::::::::::::::::::::::*/
 
 connectingDB();
-application.use(cors({
-    origin: true,
-    credentials: true
-}));
+
 application.use(express.json({
     extended: false
 }));
