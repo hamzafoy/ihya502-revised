@@ -5,7 +5,7 @@
 import './LandingPage.css';
 import NavBar from '../NavBar/NavBar';
 import React from 'react';
-import podcast from '../../assets/full_20210813.mp3';
+import podcast from '../../assets/full_20211213.mp3';
 
 
 
@@ -105,16 +105,16 @@ class LandingPage extends React.Component {
                     <ul className="landing-page__podcast-label">
 
                         <li>
-                            <strong>Date:</strong> 08-13-2021
+                            <strong>Date:</strong> 12-15-2021
                         </li>
 
                         <li>
-                            <strong>Topic:</strong> 'Reading between the Lines':
+                            <strong>Topic:</strong> 'Recap of Recent Trip to Help Storm Affected Areas'
                         </li>
 
-                        <li>
+                        {/* <li>
                             Review of 'What Tech Calls Thinking'
-                        </li>
+                        </li> */}
 
                     </ul>
 
