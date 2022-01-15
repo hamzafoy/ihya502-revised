@@ -109,7 +109,7 @@ class LandingPage extends React.Component {
                         </li>
 
                         <li>
-                            <strong>Topic:</strong> 'Sports &amp; Youth [ft. Nini Mohamed]''
+                            <strong>Topic:</strong> 'Sports &amp; Youth [ft. Nini Mohamed]'
                         </li>
 
                         {/* <li>
