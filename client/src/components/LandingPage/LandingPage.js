@@ -109,12 +109,12 @@ class LandingPage extends React.Component {
                         </li>
 
                         <li>
-                            <strong>Topic:</strong> 'Sports &amp; Youth [ft. Nini Mohamed]'
+                            <strong>Topic:</strong> 'Sports &amp; Youth [ft. Nini Mohamed]' 
                         </li>
 
-                        {/* <li>
-                            Review of 'What Tech Calls Thinking'
-                        </li> */}
+                        <li>
+                            <em>Audio may not play in full</em>
+                        </li>
 
                     </ul>
 
