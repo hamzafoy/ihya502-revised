@@ -43,7 +43,9 @@ class AboutUs extends React.Component {
                             announcements and topics range between community 
                             interviews, discussion of the Islamic sciences or local
                             issues, &amp; reviews of literature or media. Guests are 
-                            always welcome to join and get behind the mic!
+                            always welcome to join and get behind the mic! If you are 
+                            interested in participating in an episode, please contact 
+                            Br. Hamza Foy via one of the social media platforms below.
                         </p>
 
                     </section>
