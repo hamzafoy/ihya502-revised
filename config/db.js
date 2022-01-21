@@ -4,7 +4,7 @@
 
 const mongoose = require('mongoose');
 const config = require('config');
-const dbKey = process.env.MONGODB_URI || config.get('mongoURI');
+const dbKey = process.env.MONGODB_URI //|| config.get('mongoURI');
 
 
 
