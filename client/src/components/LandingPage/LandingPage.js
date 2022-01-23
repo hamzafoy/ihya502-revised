@@ -109,7 +109,7 @@ class LandingPage extends React.Component {
                         </li>
 
                         <li>
-                            <strong>Topic:</strong> Reading between the Lines [ft. Mishkat Suleiman] 
+                            <strong>Topic:</strong> Reading between the Lines [ft. Mishkat Suleiman] <br/>
                         </li>
 
                         <li>
