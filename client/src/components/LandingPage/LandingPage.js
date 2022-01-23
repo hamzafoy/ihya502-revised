@@ -113,7 +113,7 @@ class LandingPage extends React.Component {
                         </li>
 
                         <li>
-                            <em>Audio may not play in full</em>
+                            <em>Book: Moral Capitalism: Why Fairness Won't Make Us Poor</em>
                         </li>
 
                     </ul>
