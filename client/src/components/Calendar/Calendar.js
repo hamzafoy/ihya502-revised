@@ -41,7 +41,7 @@ class Calendar extends React.Component {
 
                 <div className="calendar-container">
 
-                    {window.innerWidth > 1279 ? calendars.horizontal : calendars.vertical}
+                    {window.innerWidth > 1125 ? calendars.horizontal : calendars.vertical}
 
                 </div>
 
