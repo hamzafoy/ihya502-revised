@@ -85,7 +85,7 @@ class Contact extends React.Component {
                             />
 
                             <h1 className="input__label">
-                                Email:
+                                Email [* Not Required]:
                             </h1>
 
                             <input
